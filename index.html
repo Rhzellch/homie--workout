@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOMIEWORK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+<div id="halaman-awal">
+  <h1 class="title">HOME WORKOUT</h1>
+  <p class="subtitle">Masukkan Nama Anda</p>
+  <div class="form-box">
+    <label for="nama-user">Nama :</label>
+    <input type="text" id="nama-user" placeholder="Isi Disini">
+    <button class="submit-btn" onclick="mulaiAplikasi()">MULAI</button>
+  </div>
+</div>
+
+<header style="display: none;">
+    <div class="logo" id="welcome-text">HOMIEWORK</div>
+    <div class="language">
+      <select id="language-select" onchange="changeLanguage()">
+        <option value="id" selected>Indonesia</option>
+        <option value="en">English</option>
+  </select>
+</div>
+
+  </header>
+
+<div id="homepage"  style="display: none;">
+  <h1 class="title">HOME WORKOUT</h1>
+  <p class="subtitle">Untuk Wanita</p>
+  <div class="body-group">
+    <div class="body-card" id="upper-btn">
+      <div class="body-section" style="background-image: url('up.jpg');"></div>
+      <div class="body-label">Upper Body</div>
+    </div>
+
+    <div class="body-card" id="lower-btn">
+      <div class="body-section" style="background-image: url('low.jpg');"></div>
+      <div class="body-label">Lower Body</div>
+    </div>
+
+     <div class="body-card" id="fitur-btn">
+      <div class="body-section double" style="background-image: url('kal.jpg');">
+      </div>
+      <div class="body-label">Fitur lainnya</div>
+    </div>
+  </div>
+</div>
+
+   <!-- Upper Body Content -->
+<div class="page" id="upper-page">
+  <button class="back-btn" onclick="goBack()">← Kembali</button>
+  <h2>Upper Body Workouts</h2>
+  <div class="video-grid">
+
+  <div class="video-card">
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/https://youtu.be/08EB87Tj5ow" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+      <p class="video-title">Push Up Variation</p>
+      <p class="video-meta">Lakukan Selama 30 Detik · 1</p>
+  </div>
+</div>
+  <div class="video-card">
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/Cq4hv06ZXZ8" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+      <p class="video-title">Bird Dog</p>
+      <p class="video-meta">Lakukan Selama 30 Detik · 2</p>
+    </div>
+  </div>
+  <div class="video-card">
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/bQsk2WOxNMs" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+      <p class="video-title">Reverse Plank</p>
+      <p class="video-meta">Lakukan Selama 30 Detik · 3</p>
+    </div>
+  </div>
+  <div class="video-card">
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/WOi_egAen4g" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+      <p class="video-title">Plank Saw</p>
+      <p class="video-meta">Lakukan Selama 30 Detik · 4</p>
+    </div>
+  </div>
+  <div class="video-card">
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/https://youtu.be/08EB87Tj5ow" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+      <p class="video-title">Plank Shoulder Tap</p>
+      <p class="video-meta">Lakukan Selama 30 Detik · 5</p>
+    </div>
+  </div>
+  <div class="video-card">
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/08EB87Tj5ow" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+      <p class="video-title">Back Pull</p>
+      <p class="video-meta">Lakukan Selama 30 Detik · 6</p>
+    </div>
+  </div>
+  <div class="video-card">
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/7Ss_a3bpBKA" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+      <p class="video-title">Dolphin Plank</p>
+      <p class="video-meta">Lakukan Selama 30 Detik · 7</p>
+    </div>
+  </div>
+  <div class="video-card">
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/ITCqS-Ei2vU" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+      <p class="video-tittle">Arm Circles</p>
+      <p class="video-meta">Lakukan Selama 30 Detik · 8</p>
+  </div>
+</div>
+  </div>
+</div>
+
+  <!-- Lower Body Content -->
+<div class="page" id="lower-page">
+  <button class="back-btn" onclick="goBack()">← Kembali</button>
+  <h2>Lower Body Workouts</h2>
+  <div class="video-grid">
+
+  <div class="video-card">
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/https://youtu.be/08EB87Tj5ow" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+      <p class="video-title">Squat Tap</p>
+      <p class="video-meta">30 Detik · 1</p>
+    </div>
+  </div>
+  <div class="video-card">
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/https://youtu.be/08EB87Tj5ow" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+      <p class="video-title">Sumo Squat</p>
+      <p class="video-meta">576M views · Aug 19</p>
+    </div>
+  </div>
+  <div class="video-card">
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/https://youtu.be/08EB87Tj5ow" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+      <p class="video-title">Straight Leg Kick (Right)</p>
+      <p class="video-meta">576M views · Aug 19</p>
+    </div>
+  </div>
+  <div class="video-card">
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/https://youtu.be/08EB87Tj5ow" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+      <p class="video-title">Straight Leg Kick (Left)</p>
+      <p class="video-meta">576M views · Aug 19</p>
+    </div>
+  </div>
+  <div class="video-card">
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/Xenppzi_FD4" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+      <p class="video-title">Glute Bridge</p>
+      <p class="video-meta">576M views · Aug 19</p>
+    </div>
+  </div>
+  <div class="video-card">
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/OKiKsfkjRZA" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+      <p class="video-title">Glute Bridge Abduction</p>
+      <p class="video-meta">576M views · Aug 19</p>
+    </div>
+  </div>
+  <div class="video-card">
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/b2yThFBrdDQ" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+      <p class="video-title">Clamshell (Left)</p>
+      <p class="video-meta">576M views · Aug 19</p>
+    </div>
+  </div>
+  <div class="video-card">
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/jdGC93GyvpA" frameborder="0" allowfullscreen></iframe>
+    <div class="video-info">
+      <p class="video-title">Clamshell (Right)</p>
+      <p class="video-meta">576M views · Aug 19</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+  <!-- Fitur Body Options -->
+<div class="page" id="fitur-page">
+  <button class="back-btn" onclick="goBack()">← Kembali</button>
+  <h2>Pilih Fitur</h2>
+  <button class="fitur-option" onclick="openKalkulator()">Kalkulator Berat Ideal Berdasarkan Tinggi</button>
+  <button class="fitur-option" onclick="openKalori()">Kalori yang dibutuhkan</button>
+</div>
+
+<!-- Kalkulator Berat Badan Ideal -->
+<div class="page" id="kalkulator-page">
+  <button class="back-btn" onclick="goBack()">← Kembali</button>
+  <h2>Kalkulator Berat Badan Ideal</h2>
+  <div class="form-box">
+    <label for="tinggi">Tinggi Badan (cm)</label>
+    <input type="number" id="tinggi" placeholder="Masukkan tinggi Anda">
+
+    <button class="submit-btn" onclick="hitungBeratIdeal()">Hitung</button>
+    <p class="result-text" id="hasil-berat"></p>
+  </div>
+</div>
+
+
+<!-- Kalkulator BMR -->
+<div class="page" id="kalori-page">
+  <button class="back-btn" onclick="goBack()">← Kembali</button>
+  <h2>Kalkulator Kalori (BMR)</h2>
+  <div class="form-box">
+    <label for="berat">Berat Badan (kg)</label>
+    <input type="number" id="berat" placeholder="Contoh: 55">
+
+    <label for="tinggi-bmr">Tinggi Badan (cm)</label>
+    <input type="number" id="tinggi-bmr" placeholder="Contoh: 160">
+
+    <label for="umur">Umur (tahun)</label>
+    <input type="number" id="umur" placeholder="Contoh: 25">
+
+    <button class="submit-btn" onclick="hitungKalori()">Hitung BMR</button>
+    <p class="result-text" id="hasil-bmr"></p>
+  </div>
+</div>
+</div>
+
+  <div class="checkbox-container">
+    <p><input type="checkbox" checked> Saya menyetujui bahwa segala risiko cedera akibat aktivitas latihan menjadi tanggung jawab pribadi, dan Homiework tidak bertanggung jawab atas hal tersebut.</p>
+    <p><input type="checkbox" checked> Saya menyetujui bahwa nama pribadi saya akan digunakan sesuai dengan kebijakan Homiework untuk meningkatkan website.</p>
+  </div>
+
+  <div class="footer">
+    Pengguna dapat mengakses aplikasi ini di mana saja, kapan saja, dan bersama siapa pun. Diharapkan untuk menggunakan secara bijak dan teratur agar setiap gerakan memberikan hasil yang diinginkan. Selalu berhati-hati saat melakukan gerakan untuk menghindari cedera.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
